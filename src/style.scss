@@ -1,0 +1,111 @@
+$grey_dark: #6b6969;
+$white: #ffff;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+  font-size: 1.5em;
+    text-align: center;
+  background: linear-gradient(to right bottom, #77c1e5, #c069c4);
+}
+.app {
+  padding: 4rem 2rem;
+ 
+  .container {
+    max-width: 95%;
+    min-height: 520px;
+    margin: auto;
+    p {
+      margin: 0.2rem 0;
+    }
+    background: hsla(0,0%,100%,.3);
+    border: 2px solid hsla(0,0%,100%,.5);
+    border-radius: 1.3em;
+    font-size: 2em;
+    padding: 30px 0;
+  }
+  .content {
+    text-align: center;
+    .city {
+      color: $white;
+      margin-bottom: 0.2rem;
+      font-size: 1em;
+      margin-top: 5px;
+    }
+    .today {
+      padding: 0.5rem 1.5rem 1rem 1.5rem;
+      .info {
+        color: $white;
+        font-size: 0.4em;
+      }
+      .data {
+        padding: 0.1rem 0;
+        color: $white;
+        font-size: 0.4em;
+      }
+      .icon {
+        margin-top: 20px;
+        padding: 0;
+        color: $white;
+        img {
+          width: 70px;
+        }
+      }
+ 
+      .degrees {
+        font-size: 1.6em;
+      }
+
+      .wind {
+        margin-right: 8px;
+        margin-top: 5px;
+      }
+    }
+
+    .hour_section {
+      padding: 2rem 1.5rem 0.5rem 1.5rem;
+      margin-left: 0px;
+   
+      .weather_by_hour {
+        overflow-y: hidden;
+        overflow-x: auto;
+        display: flex;
+        .hour_weather {
+          margin-right: 2rem;
+          text-align: center;
+          font-size: 0.4em;
+          color: $white;
+          padding-bottom: 1rem;
+          white-space: nowrap;
+          .icon {
+            img {
+              width: 40px;
+            }
+          }
+          .hour {
+            margin-bottom: 1.5rem;
+          }
+          .data {
+            margin-top: 1.5rem;
+            p {
+              margin-bottom: 0.5rem;
+            }
+          }
+          .wind {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  
+  }  
+  .rightNow {
+      margin: 0;
+      font-size: 0.4em;
+      color: $grey_dark;
+    }
+}
